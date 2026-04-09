@@ -1,0 +1,62 @@
+
+
+#recipe{
+color: #8585ad;
+}
+
+
+h1{
+  color: aqua;
+}
+
+section h2{
+  color: blue;
+}
+
+.about-text{
+  color: #456204;
+}
+
+[class*="sub"] {
+  color: yellow;
+}
+
+.text>p{
+  color: pink;
+}
+
+.text-list :first-child {
+  color: #998c66;
+}
+
+.text-list li{
+  color:rgb(72, 61, 107);
+}
+
+.recipe-steps li{
+color: brown;
+}
+h2 ~ ul{
+  color: orange;
+}
+
+span{
+  color: gold;
+}
+
+.traditions-text{
+  color: purple;
+}
+
+p{
+  color: green;
+}
+
+
+.amount{
+  color: rgb(123, 255, 79);
+}
+.time{
+  color: red;
+}
+
