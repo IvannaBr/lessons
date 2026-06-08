@@ -17,7 +17,7 @@ margin: 50px;
   color:#1AAF5B;
 }
 .text {
-  width: 460px;
+  max-width: 460px;
   font-size: 20px;
   line-height: 1.4;
   color: rgba(0, 0, 0, 1);
