@@ -1,0 +1,15 @@
+@font-face{
+  font-family: "DM Sans";
+  src: url(../font/DMSans-Bold.woff2);
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  
+}
+
+@font-face {
+  font-family: "GreatVibes";
+  src: url(../font/GreatVibes-Regular.woff2);
+  font-style: normal;
+  font-display: swap;
+}
