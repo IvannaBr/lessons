@@ -1,0 +1,269 @@
+.main-content {
+  height: 100%;
+  padding: 50px;
+  font-family: "Poppins";
+  font-size: 20px;
+  text-align: center;
+}
+
+[class*="__container"] {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+[class*="__padding"] {
+  background-color: rgb(212, 177, 51);
+  height: auto;
+}
+
+.content-one,
+.content-two {
+  background-color: brown;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  background-color: rgb(175, 201, 224);
+  font-size: 30px;
+  font-weight: 600;
+}
+
+[class*="__margin"] {
+  background-color: rgb(212, 177, 51);
+  height: auto;
+}
+
+.sides__padding {
+  padding: 20px;
+}
+
+.two-sides__padding {
+  padding: 20px 30px;
+}
+
+.three-sides__padding {
+  padding: 20px 10px 20px;
+}
+
+.four-sides__padding {
+  padding: 20px 10px 20px 10px;
+}
+
+.top__padding {
+  padding-top: 20px;
+}
+
+.right__padding {
+  padding-right: 20px;
+}
+
+.bottom__padding {
+  padding-bottom: 20px;
+}
+
+.left__padding {
+  padding-left: 20px;
+}
+
+
+.sides__margin {
+  margin: 20px;
+}
+
+.two-sides__margin {
+  margin: 20px 30px;
+}
+
+.three-sides__margin {
+  margin: 20px 30px 20px;
+}
+
+.four-sides__margin {
+  margin: 20px 30px 20px 30px;
+}
+
+.top__margin {
+  margin-top: 20px;
+}
+
+.right__margin {
+  margin-right: -20px;
+}
+
+.bottom__margin {
+  margin-bottom: 20px;
+}
+
+.left__margin {
+  margin-left: 20px;
+}
+
+.content-tree {
+  background-color: bisque;
+  margin-bottom: 20px;
+}
+
+.content-tree div {
+  height: 30px;
+  background-color: blue;
+  color: aliceblue;
+}
+
+.block-1 {
+  margin-bottom: 20px;
+}
+
+.content-four {
+  margin-bottom: 30px;
+}
+
+.block-3 p {
+  background-color: blueviolet;
+  margin-bottom: 20px;
+}
+
+.block-3 {
+  margin-bottom: 10px;
+}
+
+.block-4 {
+  margin-top: 40px;
+  background-color: blueviolet;
+}
+
+.content-five div {
+  background-color: blueviolet;
+  width: 200px;
+  height: 50px;
+  margin: 20px;
+}
+
+.content-five {
+  display: flex;
+
+}
+
+.content-six {
+  width: 750px;
+}
+
+.content-six div {
+  margin: 20px;
+}
+
+.example-1 {
+  width: auto;
+  background-color: aqua;
+}
+
+.example-2 {
+  max-width: 400px;
+}
+
+.example-3 {
+  min-width: 400px;
+}
+
+.content-seven {
+  margin-bottom: 50px;
+}
+
+.content-seven div {
+  background-color: aqua;
+  width: 600px;
+  margin-bottom: 50px;
+}
+
+.block-7 {
+  min-height: 100px;
+}
+
+.block-8 {
+  max-height: 100px;
+  overflow: visible;
+}
+
+.block-9 {
+  max-height: 100px;
+  overflow: hidden;
+}
+
+.block-10 {
+  max-height: 100px;
+  overflow: scroll;
+}
+
+.block-11 {
+  min-height: 50px;
+  overflow: auto;
+}
+
+.link{
+  background-color: #b88e2f;
+  width: 110px;
+  height: 35px;
+  padding: 5px;
+  margin: 10px;
+}
+
+span {
+  display: block;
+  height: 40px;
+  background-color: blueviolet;
+}
+
+.content-nine {
+  height: auto;
+  margin: 30px;
+}
+
+.hero {
+  min-width: 643px;
+  min-height: 443px;
+  background-color: #FFF3E3;
+  border-radius: 10px;
+  font-family: "Poppins";
+  padding: 62px 40px 40px;
+
+
+}
+
+.label {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 3px;
+  margin-bottom: 4px;
+}
+
+.hero-title {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #b88e2f;
+  margin-bottom: 17px;
+}
+
+.hero-text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.333;
+  margin-bottom: 46px;
+
+
+}
+
+.hero_button {
+  line-height: 1.5;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: #b88e2f;
+  color: #ffffff;
+  width: 222px;
+  height: 74px;
+  padding: 25px 72px;
+ 
+}
