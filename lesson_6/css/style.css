@@ -88,7 +88,7 @@ body {
 .example-background {
   min-height: 316px;
   width: 100%;
-  background: url(img/Rectangle\ 1.png) 0 0/ cover no-repeat scroll;
+  background: url(../img/Rectangle\ 1.png) 0 0/ cover no-repeat scroll;
 }
 
 .example-content {
@@ -120,7 +120,7 @@ body {
   display: block;
   width: 20px;
   height: 20px;
-  background: url(img/icon.png) center / contain no-repeat scroll;
+  background: url(../img/icon.png) center / contain no-repeat scroll;
   margin: 0 6px 0 6px;
 }
 
@@ -160,13 +160,13 @@ body {
 
 .example-two li{
   margin-bottom: 12px;
-  background: url(img/icon-li.png) left top/ 16px 20px  no-repeat;
+  background: url(../img/icon-li.png) left top/ 16px 20px  no-repeat;
   padding-left: 28px;
 
 }
 
 .header {
-  background: rgba(3, 3, 3, 1) url(img/background-example-2.jpeg) center/ cover no-repeat;
+  background: rgba(3, 3, 3, 1) url(../img/background-example-2.jpeg) center/ cover no-repeat;
   min-height: 342px;
   width: 100%;
    text-align: center;
