@@ -1,7 +1,7 @@
 body {
   background:
     url(../img/background_2.jpeg) center top /595px auto no-repeat fixed,
-    url(img/backgroung.jpeg) center / cover no-repeat scroll;
+    url(../img/backgroung.jpeg) center / cover no-repeat scroll;
   min-height: 100%;
   font-family: "Poppins", "Montserrat", sans-serif;
 }
@@ -46,7 +46,7 @@ body {
 }
 
 .top__border {
-  background-image: url(img/img.jpeg);
+  background-image: url(../img/img.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   border-top: 10px solid blue;
