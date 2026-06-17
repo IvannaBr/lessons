@@ -1,6 +1,6 @@
 body {
   background:
-    url(img/background_2.jpeg) center top /595px auto no-repeat fixed,
+    url(../img/background_2.jpeg) center top /595px auto no-repeat fixed,
     url(img/backgroung.jpeg) center / cover no-repeat scroll;
   min-height: 100%;
   font-family: "Poppins", "Montserrat", sans-serif;
