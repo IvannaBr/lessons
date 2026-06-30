@@ -210,7 +210,7 @@ ul:has(span) {
   padding: 30px;
 }
 
-.game div:nth-of-type(.game-area) {
+.game-area div {
   width: 700px;
   height: 700px;
 }
@@ -377,19 +377,14 @@ ul:has(span) {
   opacity: 0;
 }
 
-/* 2. Початковий стан першого блоку */
 .game-area div:first-child {
   opacity: 1;
   background: aliceblue url(../img/pngwing.com.png) center / contain no-repeat;
-  pointer-events: auto;
 }
 
-/* 3. Коли наводимо на поточний блок, наступний стає видимим */
-.game-area div:hover,
-.game-area div:hover+div {
+.game-area div:hover{
   opacity: 1;
   background-color: aliceblue;
-  pointer-events: auto;
 }
 
 
@@ -403,7 +398,7 @@ ul:has(span) {
   line-height: 1.3;
   min-width: 364px;
   display: inline-block;
-  letter-spacing: -0.025;
+  letter-spacing: -0.025em;
   margin-bottom: 19px;
 }
 
@@ -443,7 +438,7 @@ h2 span {
   color: rgba(255, 255, 255, 1);
   font-weight: 700;
   line-height: 1.294;
-  letter-spacing: -0.43px;
+  letter-spacing: -0.43em;
   padding: 25px 40px;
   border-top-right-radius: 18px;
 }
