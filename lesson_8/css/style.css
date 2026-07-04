@@ -40,7 +40,7 @@ footer div{
 
 footer div::before{
   content: "";
-  background-image: url(./img/trophy.svg);
+  background-image: url(../img/trophy.svg);
   height: 60px;
   width: 60px;
   display: inline-block;
