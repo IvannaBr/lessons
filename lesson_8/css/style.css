@@ -20,9 +20,9 @@ header> :not(:last-child) {
 }
 
 main div:first-child{
-  min-width: 1880px;
+  max-width: 1040px;
   min-height: 780px;
-  background-image: url(../img/scandinavian-interior-mockup-wall-decal-background\ 1.webp);
+  background: url(/img/scandinavian-interior-mockup-wall-decal-background\ 1.webp) center / cover no-repeat;
   font-size: 25px;
 }
 
