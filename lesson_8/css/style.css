@@ -22,7 +22,7 @@ header> :not(:last-child) {
 main div:first-child{
   max-width: 1040px;
   min-height: 780px;
-  background: url(/img/scandinavian-interior-mockup-wall-decal-background\ 1.webp) center / cover no-repeat;
+  background: url(../img/scandinavian-interior-mockup-wall-decal-background\ 1.webp) center / cover no-repeat;
   font-size: 25px;
 }
 
