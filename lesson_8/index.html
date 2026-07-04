@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <div>
+      <img src="/img/logo.png" alt="logo">
+      <p>
+        Контентне растрове зображення у форматі png, зазвичай має більшу вагу ніж jpg, але в даному випадку навпаки.
+      </p>
+    </div>
+
+    <div>
+      <img src="./img/mdi_account-alert-outline.svg" alt="Account icon">
+      <img src="./img/akar-icons_search.svg" alt="Search icon">
+      <img src="./img/akar-icons_heart.svg" alt="Heart icon">
+      <img src="./img/ant-design_shopping-cart-outlined.svg" alt="Shopping cart icon">
+      <p>
+        Іконки, векторне зображення у форматі svg, не втрачає свою якість при збільшенні.
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <div>
+      <p>Контентне растрове зображення, додане за допомогою властивості background-image, конвертоване jpg - webp</p>
+    </div>
+
+    <p>Контентне растрове зображення, додане за допомогою тегу img, конвертоване jpg - avif </p>
+    <div>
+      <img src="./img/dining.avif" alt="Dining room">
+    </div>
+    <div>
+      <img src="./img/Image-living room av.avif" alt="Living room">
+    </div>
+    <div>
+      <img src="./img/Bedroom.avif" alt="Bedroom">
+    </div>
+
+    <div>
+      <p>Контентне растрове зображення, додане за допомогою тегу picture,конструкцією для ретина дисплеїв, конвертоване jpg - avif </p>
+      <picture>
+        <source srcset="./img/background-av.avif 1x, ./img/background-2х.avif 2x, ./img/background-3х.avif 3x" type="image/avif">
+        <img src="./img/background-av.avif" alt="background">
+      </picture>
+    </div>
+  </main>
+  <footer>
+    <p>Елемент дизайну, доданий псевдоелементом ::before у форматі svg</p>
+    <div>
+      High Quality
+    </div>
+  </footer>
+</body>
+</html>

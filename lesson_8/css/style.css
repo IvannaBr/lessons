@@ -1,0 +1,52 @@
+body {
+  background-color: rgb(209, 185, 231);
+  padding: 25px;
+}
+
+
+body > :not(:last-child){
+  margin-bottom: 25px;
+}
+body p{
+  background-color: antiquewhite;
+  padding: 15px;
+  display: inline-block;
+  margin: 5px;
+  font-size: 20px;
+}
+
+header> :not(:last-child) {
+  margin-bottom: 20px;
+}
+
+main div:first-child{
+  min-width: 1880px;
+  min-height: 780px;
+  background-image: url(/img/scandinavian-interior-mockup-wall-decal-background\ 1.webp);
+  font-size: 25px;
+}
+
+main > :not(:last-child) {
+  margin-bottom: 20px;
+}
+
+div img{
+  border-radius: 10px;
+}
+footer div{
+  font-size: 25px;
+  font-weight: 600;
+}
+
+footer div::before{
+  content: "";
+  background-image: url(/img/trophy\ 1.svg);
+  height: 60px;
+  width: 60px;
+  display: inline-block;
+
+}
+
+footer > :not(:last-child) {
+  margin-bottom: 20px;
+}
