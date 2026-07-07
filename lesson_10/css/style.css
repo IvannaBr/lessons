@@ -1,0 +1,174 @@
+[class*="__container"]{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+[class*="__link"]{
+    font-size: 20px;
+    padding: 10px;
+}
+
+[class*="__item"]:not(:last-child){
+  margin-bottom: 10px;
+}
+
+[class*="__submenu"], .sub-submenu{
+   min-width: max-content;
+  background-color: rgba(255, 255, 255, 1);
+  color:rgba(3, 3, 3, 1) ;
+  
+}
+
+body{
+  background-color: rgba(3, 3, 3, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+ 
+}
+
+.header{
+  position: sticky;
+  top:0;
+  z-index: 20;
+  background-color:rgb(83, 49, 49);
+text-align: center;
+ 
+}
+.header__container {
+  
+}
+.header__menu {
+
+}
+.menu {
+}
+
+.menu__item {
+  display: inline-block; 
+  position: relative;
+}
+
+.menu__item:not(:last-child){
+  margin-right: 25px;
+}
+
+.menu__link{
+
+}
+
+.menu__item:hover .menu__link{
+text-decoration: underline;
+}
+
+.menu__item:hover .submenu{
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu__submenu {
+   position: absolute;
+   top:100%;
+   left: 0;
+  z-index: 1;
+}
+
+.submenu {
+  opacity: 0;
+ visibility: hidden;
+}
+
+.submenu__item { 
+  font-size: 20px;
+
+}
+
+
+.submenu__item:hover .submenu__link {
+  text-decoration: underline;
+}
+.submenu__link {
+}
+
+.menu__submenu {
+}
+.submenu {
+}
+.submenu__item {
+   position: relative;
+}
+.submenu__link {
+}
+.submenu__sub-submenu {
+}
+.sub-submenu {
+position: absolute;
+top: 0;
+left:80px;
+z-index: 50;
+opacity: 0;
+visibility: hidden;
+
+}
+.sub-submenu__item:hover .sub-submenu__link {
+  text-decoration: underline;
+}
+
+.submenu__item:hover .sub-submenu{
+    opacity: 1;
+  visibility: visible;
+}
+
+.page__content{
+   padding: 32px;
+   max-width: 834px;
+  height: auto;
+  background-color: rgba(26, 26, 26, 1);
+  color: rgba(249, 239, 236, 1);
+  font-family: "Barlow", "Inter", sans-serif; 
+}
+
+.page__content h2{
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+ .page__content li::before{
+  content: "";
+  background: url(../img/twemoji_diamond-with-a-dot.svg) center / contain no-repeat;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: -1px;
+}
+
+
+.page__content li{
+  padding-left: 30px;
+  display: inline-block;
+  position: relative;
+}
+.page__content > *:not(:last-child):not(ul) {
+  margin-bottom: 12px;
+}
+.page__content ul{
+  margin-bottom: 24px;
+}
+
+.page__content ul li:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.page__content div > p:not(:last-child) {
+  margin-bottom: 33px;
+}
+
+.page__content div:not(:last-child){
+  margin-bottom: 24px;
+}
+
