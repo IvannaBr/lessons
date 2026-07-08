@@ -1,0 +1,343 @@
+.wrapper{
+  overflow: clip;
+  height: 100%;
+}
+
+.header{
+  background-color: rgb(137, 233, 255);
+  min-height: 300px;
+}
+
+.header__items div{
+  background-color: aliceblue;
+  border-radius: 50%;
+  width: 150px;
+  height: 80px;
+  display: inline-block;
+
+}
+
+.header__items div:nth-child(odd){
+    width: 100px;
+  height: 100px;
+  margin: 50px 50px 0 0;
+}
+
+
+.header__items div:nth-child(2n+2){
+  scale: 1.2;
+}
+
+.header__items div:first-child{
+  translate: 90px;
+}
+
+.header__items div:nth-child(3){
+  translate: -60px 15px;
+  scale: 1.4;
+  width: 150px;
+  height: 50px;
+  
+}
+
+.header__items div:nth-child(4){
+  transform: skew(25deg, 4deg);
+  translate: 50px;
+}
+
+.header__items div:nth-child(6){
+  translate:100px
+}
+.header__items div:nth-child(8){
+  translate:-90px;
+}
+
+.header__items div:last-child{
+  scale: 2;
+  translate: -120px;
+   transform: skew(25deg, 4deg);
+}
+
+.page__block{
+min-height: 400px;
+ background-color: rgb(60, 168, 71);
+ position: relative;
+}
+
+.page__road{
+ position: relative;
+ top:100px;
+  background-color: rgb(95, 93, 93);
+   transform: skew(25deg, 4deg);
+   height: 150px;
+   scale:1.2;
+}
+
+.page__road::before{
+  content: "";
+background-color:aliceblue;
+  width: 100%;
+  height: 10px;
+  display: inline-block;
+  position: absolute;
+  top:45%;
+}
+
+.car{
+  width: 370px;
+  height: 100px;
+  border-radius: 30px;
+  position: relative;
+  background: linear-gradient(90deg, rgba(155, 108, 42, 1) 0%, rgba(237, 83, 83, 1) 100%);
+  top:-50px;
+  left: 50px;
+  right: 0;
+  z-index: 5;
+ transform: skew(2deg, 2deg);
+ animation: drive-and-scale 0.5s ease-in-out infinite;
+}
+
+.car::before{
+  content: "";
+  width: 250px;
+  height: 200px;
+  display: inline-block;
+background: linear-gradient(90deg, rgba(155, 108, 42, 1) 0%, rgba(237, 83, 83, 1) 100%);
+  border-radius: 50%;
+  margin: -100px 0 0 50px;
+   transform: skew(2deg, 2deg);
+}
+
+.car div{
+  position: absolute;
+
+}
+.car div:first-child{
+     width: 40px;
+  height: 60px;
+  background-color: rgb(230, 222, 222);
+  box-shadow: inset -29px 23px 83px -41px rgba(86, 195, 209, 0.86);
+ 
+ top: -60px;
+ left: 260px;
+ border-top-right-radius: 90%;
+  z-index: 11;
+  transform-origin: left bottom;
+  transform: skew(0deg, 10deg);
+  rotate: -10deg ;
+    
+}
+
+.car div:nth-child(2){
+  width: 60px;
+  height: 70px;
+  background-color: rgb(230, 222, 222);
+top:-68px;
+left: 150px;
+ border-top-right-radius: 90%;
+  z-index: 11;
+  transform-origin: left bottom; 
+  margin-left: 10px;
+}
+
+.car div:nth-child(2)::before{
+    content: "";
+background-color:aliceblue;
+  width: 160px;
+  height: 3px;
+  display: inline-block;
+  translate: -80px 60px;
+
+}
+.car div:nth-child(3){
+
+  width: 60px;
+  height: 70px;
+  background-color: rgb(230, 222, 222);
+top:-68px;
+left: 150px;
+ border-top-right-radius: 90%;
+  transform-origin: left bottom;
+  transform: scalex(-1);
+}
+
+
+
+.car div:nth-child(4){
+  width: 20px;
+  height: 40px;
+ background-color: blanchedalmond;
+background: radial-gradient(circle,rgb(222, 204, 136) 45%, rgb(199, 208, 46) 60%, rgba(252, 119, 70, 1) 91%);
+box-shadow: 50px 32px 46px 50px rgba(245, 240, 107, 0.43);
+ border-radius: 50%;
+  top: 10px;
+  right: 0;
+ 
+}
+
+.car div:nth-child(5){
+  width: 70px;
+  height: 70px;
+ background-color: blanchedalmond;
+ border-radius: 50%;;
+top:50px;
+left: 50px;
+ transform: skew(2deg, 2deg);
+}
+
+.car div:nth-child(5)::before{
+  content: "";
+  width: 30px;
+  height: 30px;
+ background-color: rgb(130, 127, 123);
+ border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+  
+ .car div:nth-child(6){
+  width: 70px;
+  height: 70px;
+ background-color: blanchedalmond;
+ border-radius: 50%;
+  top:50px;
+  left: 220px;
+ transform: skew(2deg, 2deg);
+}
+
+.car div:nth-child(6)::before{
+  content: "";
+  width: 30px;
+  height: 30px;
+ background-color: rgb(130, 127, 123);
+ border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+@keyframes drive-and-scale 
+ {
+  0%, 100% {
+    transform: translateY(0) scale(1); /* Початкова та кінцева позиція */
+  }
+  50% {
+    transform: translateY(-50px) scale(1.2); /* Підстрибує вгору на 50 пікселів */
+  }
+}
+
+.page__blocks h1{
+  text-align: center;
+}
+.page__blocks>div{
+  display: inline-block;
+  min-width: 30px;
+  height: auto;
+  background-color: rgb(153, 215, 194, 0.5);
+  padding: 15px;
+  border: 2px solid #18342b;
+  margin: 5px;
+}
+
+.block__child{
+  background-color: rgb(128, 128, 227);
+ min-width: 30px;
+  height: auto;
+   padding: 15px;
+}
+.page__blocks  div:first-of-type:hover .block__child{
+ translate: 10px 25px;
+}
+
+.page__blocks div:nth-of-type(2):hover .block__child{
+  transform: translatey(10px);
+}
+
+.page__blocks div:nth-of-type(3):hover .block__child{
+  transform: translatex(10px);
+}
+
+.page__blocks div:nth-of-type(4):hover .block__child{
+ scale: 1.2;
+}
+
+.page__blocks div:nth-of-type(5):hover .block__child{
+ scale: 0.8;
+}
+
+.page__blocks div:nth-of-type(6):hover .block__child{
+rotate: 30deg;
+}
+
+.page__blocks div:nth-of-type(7):hover .block__child{
+transform: rotateY(70deg);
+}
+
+.page__blocks div:nth-of-type(8):hover .block__child{
+transform: rotateX(70deg);
+}
+
+.page__blocks div:nth-of-type(9):hover .block__child{
+transform: skew(10deg, 30deg)
+}
+
+.page__blocks div:nth-of-type(10):hover .block__child{
+transform-origin: 0 0;
+rotate: 5deg;
+}
+
+.page__blocks div:nth-of-type(11):hover .block__child{
+transform-origin: right top;
+rotate: 5deg;
+}
+
+.page__blocks div:nth-of-type(12):hover .block__child{
+transform-origin: bottom right;
+rotate: 10deg;
+}
+
+.page__blocks div:nth-of-type(13):hover .block__child{
+transform-origin: bottom left;
+rotate: 5deg;
+}
+
+.page__blocks div:nth-of-type(14){
+perspective: 200px;
+perspective-origin: bottom left;
+ transform-style: preserve-3d ;
+}
+
+.page__blocks div:nth-of-type(14):hover .block__child{
+  transform: translate3d(20px, 20px, 20px);
+  transition: 0.5s;
+}
+
+.page__blocks div:nth-of-type(15){
+perspective: 200px;
+perspective-origin: bottom left;
+ transform-style: preserve-3d ;
+}
+
+.page__blocks div:nth-of-type(15):hover .block__child{
+  transform: rotatey(120deg);
+  transition: 0.5s;
+  backface-visibility: hidden;
+}
+
+.page__blocks div:nth-of-type(16){
+perspective: 200px;
+perspective-origin: bottom left;
+ transform-style: preserve-3d ;
+}
+
+.page__blocks div:nth-of-type(16):hover .block__child{
+  transform: rotatey(45deg);
+  backface-visibility: visible;
+}
+
