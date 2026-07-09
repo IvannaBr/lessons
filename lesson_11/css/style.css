@@ -125,32 +125,25 @@
   }
 }
 
-
-
 @keyframes move-reverse {
   0% {
-    left: 0;
+    translate: 0 -50px;
     transform: scaleX(1);
-    top: 90px;
   }
 
   45% {
-    left: 1200px;
+    translate: 1200px 50px;
     transform: scaleX(1);
-    top: 200px;
   }
 
   50% {
-    left: 1200px;
+    translate: 1200px 50px;
     transform: scaleX(-1);
-
   }
 
   100% {
-    left: 0;
+    translate: 0 -50px;
     transform: scaleX(-1);
-    top: 90px;
-
   }
 }
 
