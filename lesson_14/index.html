@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header></header>
+    <main class="page">
+      <div class="page__container">
+        <form action="#" class="form-hero">
+          <label for="name">Your name</label>
+
+          <input id="name" name="form[]" autocomplete="off" placeholder="Abc" required minlength="2"
+            pattern="^[a-zA-Zа-яА-яёЁà-ÿÀ-ŸіІїЇєЄґҐ']{2,50}$">
+
+          <label for="email">Email adress</label>
+          <input type="email" id="email" name="form[]" placeholder="Abc@def.com" required>
+
+          <label for="subject">Subject</label>
+          <input id="subject" name="form[]" autocomplete="off" placeholder="This is an optional">
+
+          <label for="message">Message</label>
+          <textarea name="form[]" id="message" placeholder="Hi! i’d like to ask about"></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+
+        <div class="options">
+
+          <div class="size">
+            <span>Size</span>
+            <form action="#" class="size-form">
+              <label for="l">
+                L
+                <input  type="radio" id="l" name="size" value="l">
+              </label>
+              <label for="xl">
+                XL
+                <input type="radio" id="xl" name="size" value="xl">
+              </label>
+              <label for="xxl">
+                XXL
+                <input type="radio" id="xxl" name="size" value="xxl">
+              </label>
+            </form>
+          </div>
+
+          <div class="color">
+            <span>Color</span>
+            <form action="#" class="color-form">
+              <label tabindex="-1" for="purple">
+                <input type="radio" id="purple" name="color" value="purple">
+              </label>
+              <label for="black">
+                <input type="radio" id="black" name="color" value="black">
+              </label>
+              <label for="yellow">
+                <input type="radio" id="yellow" name="color" value="yellow">
+              </label>
+            </form>
+          </div>
+        </div>
+
+        <form class="form-practic">
+          <label for="tel">Phone</label>
+          <input id="tel" type="tel" name="form[]" placeholder="+380 66 666 66 66" required pattern="^\+380\d{9}$">
+
+          <label for="pass">Password</label>
+          <input id="pass" type="password" name="form[]" placeholder=" Пароль" maxlength="8"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+
+          <label for="number">Number</label>
+          <input id="number" type="number" name="form[]" placeholder="Введіть число">
+
+          <label for="color">Select color</label>
+          <input id="color" type="color" name="form[]">
+
+          <label for="search">Enter search query</label>
+          <input id="search" type="search" name="form[]" placeholder="Search">
+
+          <label for="date">Date</label>
+          <input type="date" id="date" name="form[]">
+
+          <label for="range">Value</label>
+          <input type="range" id="range" name="form[]" value="0">
+
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </form>
+
+        <div class="checkbox">
+          <label for="checkbox">Items
+            <input type="checkbox" id="checkbox" name="form[]">
+          </label>
+          <label for="checkbox-2">Items
+            <input type="checkbox" id="checkbox-2" name="form[]">
+          </label>
+          <label for="checkbox-3">Items
+            <input type="checkbox" id="checkbox-3" name="form[]">
+          </label>
+        </div>
+
+        <div class="radio-button">
+          <label>
+            <span>red</span>
+            <input type="radio" name="form[color]">
+
+          </label>
+
+          <label>
+            <span>blue </span>
+            <input type="radio" name="form[color]">
+
+          </label>
+
+          <label>
+            <span> black</span>
+            <input type="radio" name="form[color]">
+
+          </label>
+        </div>
+
+        <div class="add-file">
+          <input type="file" name="form[]" multiple accept=".jpg, .png" class="file">
+
+          <button type="button" tabindex="-1" class="add-file__button">Add file
+            <input type="file" multiple accept=".jpg, .png" name="form[]">
+          </button>
+        </div>
+
+        <select class="select">
+          <option value="1">Item 1</option>
+          <option value="2">Item 2</option>
+          <option value="3">Item 3</option>
+          <option value="4">Item 4</option>
+        </select>
+      </div>
+
+
+    </main>
+    <footer></footer>
+  </div>
+
+</body>
+
+</html>

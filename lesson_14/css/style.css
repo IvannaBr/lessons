@@ -1,0 +1,259 @@
+body {
+  font-family: "Poppins", "DM Sans", sans-serif;
+  padding: 20px;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper>main {
+  flex-grow: 1;
+}
+
+[class*="__container"] {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page__container>* {
+  margin-bottom: 30px;
+}
+
+.form-hero {
+  max-width: 635px;
+  height: auto;
+  padding: 119px 52px 63px 59px;
+}
+
+.form-hero input,
+.form-practic input {
+  height: 75px;
+  border-radius: 10px;
+  padding-left: 30px;
+  margin-bottom: 36px;
+  border: rgba(159, 159, 159, 1) solid 1px;
+}
+
+.form-hero label,
+.form-practic label {
+  margin-bottom: 22px;
+  display: inline-block;
+  color: rgba(0, 0, 0, 1);
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(159, 159, 159, 1);
+  line-height: 1.5;
+
+}
+
+textarea {
+  height: 120px;
+  width: 100%;
+  resize: vertical;
+  border: 1px solid rgba(159, 159, 159, 1);
+  border-radius: 10px;
+  padding-left: 30px;
+  padding-top: 26px;
+  font-family: "Poppins", "DM Sans", sans-serif;
+  line-height: 1.5;
+  margin-bottom: 49px;
+}
+
+.form-hero button,
+.form-practic button {
+  border-radius: 5px;
+  background: rgba(184, 142, 47, 1);
+  color: rgba(255, 255, 255, 1);
+  line-height: 1.5;
+  padding: 14px;
+  min-width: 235px;
+  margin-left: 6px;
+}
+
+.radio-button {
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.radio-button label {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.radio-button input {
+  width: 30px;
+}
+
+.radio-button span {
+  display: inline-block;
+}
+
+.checkbox label {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  cursor: pointer;
+  line-height: 1.5;
+}
+
+.checkbox label:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.checkbox input {
+  appearance: none;
+  cursor: pointer;
+  align-self: flex-start;
+  flex-basis: 30px;
+  height: 30px;
+  border-radius: 2px;
+  background-color: rgba(184, 142, 47, 1);
+}
+
+.checkbox input:checked {
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.add-file>*:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.add-file button {
+  position: relative;
+  border-radius: 5px;
+  background-color: rgba(184, 142, 47, 1);
+  color: rgba(255, 255, 255, 1);
+  line-height: 1.5;
+  padding: 14px;
+  min-width: 235px;
+}
+
+.add-file__button input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  opacity: 0;
+  font-size: 0;
+}
+
+.select {
+  font-size: 20px;
+  padding: 20px;
+  background-color: rgba(184, 142, 47, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.size,
+.color {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.size-form,
+.color-form {
+  display: inline-flex;
+  gap: 16px;
+}
+
+.size-form label {
+  background-color: rgba(249, 241, 231, 1);
+  min-width: 30px;
+  height: 30px;
+  color: rgba(0, 0, 0, 1);
+  border-radius: 5px;
+  position: relative;
+  text-align: center;
+  align-items: flex-end;
+  font-size: 13px;
+  line-height: 1.538;
+  padding: 5px 7px;
+}
+
+.size-form input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.size-form label:has(input:checked) {
+  background-color: rgba(184, 142, 47, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.size-form label:has(input:focus-visible) {
+ border: 1px solid #000000;
+}
+
+
+.color-form label:first-child {
+  background-color: rgba(129, 109, 250, 1);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.color-form label:nth-child(2) {
+  background-color: rgba(0, 0, 0, 1);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.color-form label:nth-child(3) {
+  background-color: rgba(184, 142, 47, 1);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.color-form input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.color-form label:has(input:checked) {
+  outline: 1px solid #000000;
+  outline-offset: 3px;
+}
+
+.options {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.options span {
+  color: rgba(159, 159, 159, 1);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
