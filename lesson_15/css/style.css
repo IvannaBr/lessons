@@ -285,11 +285,6 @@ a:nth-of-type(3):before {
   .card {
     flex: 1 1 250px;
   }
-
-  .card__body{
-    flex-grow: 0;
-  }
-
 }
 
 @media (width <=844px) {
