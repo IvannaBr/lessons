@@ -1,0 +1,327 @@
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: clip;
+}
+
+.wrapper>*:not(:last-child){
+  margin-bottom: 25px;
+}
+
+[class*=__container] {
+  max-width: 1266px;
+  margin: 0 auto;
+  height: auto;
+  padding: 0 15px;
+}
+
+[class*=__title] {
+  font-weight: 700;
+  line-height: 1.2;
+  color: rgba(51, 51, 51, 1);
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+[class*=__button] {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(184, 142, 47, 1);
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+  padding: 12px;
+  min-width: 202px;
+  transition: 0.3s;
+}
+
+.page {
+  flex-grow: 1;
+}
+
+body {
+  font-family: "Poppins", "DM Sans", sans-serif;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.product__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+}
+
+.product__container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 0;
+  align-items: center;
+}
+
+.card {
+  position: relative;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 285px;
+}
+
+.card:focus .card--overlay {
+  display: flex;
+}
+
+.card__aside {
+  display: flex;
+}
+
+.card__aside img {
+  object-fit: cover;
+  aspect-ratio: 285/301;
+}
+
+.card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: rgba(244, 245, 247, 1);
+  flex-wrap: nowrap;
+  padding: 16px 16px 30px 16px;
+  flex-grow: 1;
+
+}
+
+.card--discount::before {
+  content: "-30%";
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: rgba(233, 113, 113, 1);
+  color: rgba(255, 255, 255, 1);
+  display: inline-block;
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  padding: 12px 5px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.card__name {
+  color: rgba(58, 58, 58, 1);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  flex-grow: 1;
+}
+
+.card__name span {
+  color: rgba(137, 137, 137, 1);
+  font-weight: 500;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.card__price {
+  color: rgba(58, 58, 58, 1);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  display: flex;
+  gap: 0 15px;
+  flex-wrap: wrap;
+}
+
+.card__price div {
+  flex-grow: 1;
+}
+
+
+
+.card__price div:nth-child(2) {
+  color: rgba(176, 176, 176, 1);
+  line-height: 1.5;
+  text-decoration-line: line-through;
+  font-size: 16px;
+  align-self: center;
+}
+
+.card--discount-50::before {
+  content: "-50%";
+}
+
+.card--new::before {
+  content: "New";
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: rgba(46, 193, 172, 1);
+  color: rgba(255, 255, 255, 1);
+  display: inline-block;
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  padding: 12px 5px;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.card--overlay {
+  background-color: rgba(58, 58, 58, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+
+}
+
+.card--overlay__button:hover,
+.product__button--border:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(184, 142, 47, 1);
+  transition: 0.3s;
+}
+
+.card--overlay__action-link {
+  color: rgba(255, 255, 255, 1);
+  font-weight: 600;
+  line-height: 1.5;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 1;
+  flex-wrap: wrap;
+  padding: 0 10px 0 10px;
+}
+
+.card--overlay__action-link a {
+  display: flex;
+  gap: 2px;
+  flex-shrink: 0;
+  align-items: center;
+}
+
+.card--overlay__action-link a:hover {
+  text-decoration: underline;
+}
+
+.card--overlay__action-link a:first-of-type::before,
+a:nth-of-type(2):before,
+a:nth-of-type(3):before {
+  content: '';
+  background: url(../img/icon/share.svg) center / contain no-repeat;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+
+.card--overlay__action-link a:nth-of-type(2):before {
+  content: '';
+  background-image: url(../img/icon/compare.svg);
+}
+
+.card--overlay__action-link a:nth-of-type(3):before {
+  content: '';
+  background-image: url(../img/icon/Heart.svg)
+}
+
+.product__button--border {
+  border: 1px solid rgba(184, 142, 47, 1);
+}
+
+@media (width<1266px) {
+  .card {
+    flex: 1 1 250px;
+  }
+}
+
+
+@media (width <=1126px) {
+  .card {
+    flex: 1 1 230px;
+  }
+}
+
+@media (width <=1080px) {
+  .card__name {
+    font-size: 20px;
+
+  }
+}
+
+@media (width <=1046px) {
+  .card {
+    flex: 1 1 285px;
+  }
+
+  .card__aside img {
+    flex-grow: 1;
+  }
+
+    .product__container{
+    gap:10px;
+  }
+
+  .product__title{
+    margin-bottom: 15px;
+  }
+}
+
+@media (width <=970px) {
+  .product__title {
+    font-size: 30px;
+  }
+
+  .card {
+    flex: 1 1 250px;
+  }
+
+  .card__body{
+    flex-grow: 0;
+  }
+
+}
+
+@media (width <=844px) {
+  .product__title {
+    font-size: 30px;
+  }
+
+  .card {
+    flex: 1 1 230px;
+  }
+
+  .card__body{
+    flex-grow: 0;
+  }
+
+}
+
+@media (width <784px){
+
+
+  .card{
+    flex-basis: 300px;
+    flex-shrink: 0;
+    
+  }
+
+  .product__cards{
+   overflow-x:auto;
+   display: flex;
+   flex-wrap: nowrap;
+   width: 100%;
+   justify-content: flex-start;
+
+  }
+}
